@@ -127,6 +127,16 @@ class ASL5600L:
             # if the magnet cannot be read then the angle is unreliable, so return None.
             return None
 
+    def getAngleDegreesFast(self):
+        """Get the angle in degrees
+
+        Returns:
+            float: Degrees (0->359) if magnet can be read otherwise None.
+        """
+        self.i2c.writeto(self.ADDRESS, b'\x0e')
+        return (float(int.from_bytes(self.i2c.readfrom(self.ADDRESS, 2), 'big')) / 4096) * 360
+
+
     def getConf(self):
         """Internal healper function to read the raw config value
 
