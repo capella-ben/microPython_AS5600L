@@ -1,9 +1,9 @@
 from time import sleep_ms
-from ASL5600L import ASL5600L
+from AS5600L import AS5600L
 
 
 
-myPos = ASL5600L(hyst=1)
+myPos = AS5600L(hyst=1)
 
 print(myPos.getStatus())
 

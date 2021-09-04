@@ -1,7 +1,7 @@
 from machine import I2C, Pin
 
 
-class ASL5600L:
+class AS5600L:
     """
     A class for the AS5600L Magnetic Rotary Position Sensor
     """
