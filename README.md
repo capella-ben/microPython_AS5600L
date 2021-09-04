@@ -1,4 +1,4 @@
-# microPython_ALS5600L Magnet Rotary Postion Sensor
+# microPython_AS5600L Magnet Rotary Postion Sensor
 
 This is a great little magentic position sensor with a I2C interface and a 12bit output.  
 
